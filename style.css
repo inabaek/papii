@@ -1,0 +1,229 @@
+/* Global*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+    --header1: calc(2rem + 1vw);
+    --header2: calc(3.5rem + 1vw);
+    --header3: calc(3rem + 1vw);
+    --header4: calc(2.4rem + 1vw);
+    --small: calc(0.7rem + 0.5vw);
+    --big: calc(6rem + 1vw);
+    --special-color: #906272;
+    --background-color: #414141;
+    --white-text: #F2F0F0;
+    scroll-behavior: smooth;
+    background: rgba(78, 47, 38, 0.07);
+    font-family: 'Poppins', sans-serif;
+  }
+  ul {
+    list-style: none;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* NAV SECTION */
+
+  .main-head {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    position: relative;
+    background: black;
+  }
+  
+  nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    padding: 2rem 0rem;
+    
+  }
+  #logo {
+    flex: 1;
+    text-align: center;
+  }
+  #logo img {
+    width: 70px;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+  }
+  .nav-links img {
+    width: 20px;
+  }
+  .leftNav li a{
+    text-decoration: none;
+    color: #F2F0F0;
+    font-size: var(--small);
+  }
+
+  /* main */
+  /* -- hero -- */
+  .hero {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+  }
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hero h1 {
+    font-family: 'Yesteryear', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    font-size: var(--big);
+    color: var(--white-text);
+    font-weight: lighter;
+  }
+
+  /* --review-- */
+  .review {
+    width: 100%;
+    
+    background: rgba(0, 0, 0, 0.87);
+    
+  }
+  .reviewContainer {
+    width: 70%;
+    margin: 5rem auto;
+    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviewImg {
+    flex: 1 2 10rem;
+  
+  }
+  .reviewImg img {
+    width: 50px;
+  }
+  .reviewText {
+    flex: 5 1 30rem;
+    
+  }
+  .reviewText h1 {
+    font-size: 32px;
+    color: var(--white-text);
+    margin-bottom: 2rem;
+  }
+  .reviewText p {
+    font-size: 16px;
+    color: var(--white-text);
+  }
+
+  /* --grid-- */
+  .grid {
+    width: 100%;
+  }
+  .grid h1 {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: var(--header1);
+    font-weight: 100;
+    text-align: center;
+    color: #4D3026;
+    margin: 10rem 0 5rem 0;
+  }
+  .grid h1 img {
+    width: 50px;
+  }
+  .wrapper {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 10px;
+  }
+  .wrapper img {
+    width: 100%;
+  }
+
+  /*-- footer --*/
+  hr {
+    margin: 5rem 0;
+    color: #4D3026;
+  }
+  footer {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+    /* --content1--*/
+  .papiiLogo {
+    width: 100px;
+  }
+  .papiiLogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+  }
+  .social img{
+    margin-right: 2.5rem;
+    width: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .email {
+    margin-bottom: 2rem;
+  }
+  .email p {
+    font-size: 12px;
+  }
+  /* --content2--*/
+  .hoursTitle {
+    margin-bottom: 2rem;
+  }
+  .hours p{
+    font-size: 12px;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+  .firstComeSystem p{
+    font-size: 12px;
+  }
+  /* --content3--*/
+  .locationTitle {
+    margin-bottom: 2rem;
+  }
+  .address p {
+    font-size: 12px;
+  }
+  /* --content4--*/
+  .jobTitle {
+    margin-bottom: 2rem;
+  }
+  .jobContent p {
+    font-size: 12px;
+  }
+  .jobContent a {
+    text-decoration: none;
+    color: var(--background-color);
+  }
+
+
+
+
