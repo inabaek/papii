@@ -186,6 +186,7 @@
   }
 
   /* ------------------------------About------------------------*/
+ 
   .aboutWrapper {
     display: flex;
     flex-direction: column;
@@ -203,10 +204,14 @@
     object-fit: cover;
   }
   .aboutText {
+    display: flex;
+    flex-direction: column;
     width: 60%;
+    height: 50vh;
     margin: auto;
-    text-align: center;
-    margin: 10rem 0;
+    justify-content: center;
+    align-items: center;
+  
   }
   .aboutText h1 {
     font-size: var(--header1);
@@ -215,6 +220,43 @@
   .aboutText p {
     font-size: 14px;
     text-align: justify;
+  }
+
+   /* ------------------------------Menu------------------------*/
+   .menuWrapper {
+     margin-bottom: 5rem;
+   }
+   .menuImgs {
+     height: 50vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+  }
+  .menuImgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .menuImgs h1 {
+    
+    font-family: 'Reenie Beanie', cursive;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    font-size: var(--big);
+    color: var(--white-text);
+    font-weight: lighter;
+    text-align: center;
+  }
+  .menu {
+    width: 80%;
+    margin: 10rem auto;
+  }
+  .menu img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   /*-- footer --*/
